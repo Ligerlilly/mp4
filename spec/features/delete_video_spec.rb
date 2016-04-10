@@ -10,7 +10,9 @@ describe 'deleting a video' do
    page.attach_file('video_file', Rails.root + 'spec/fixtures/mov_bbb.mp4')
    click_button 'Create Video'
    expect(page).to have_content 'dog'
+   expect(page).to have_css 'video'
    click_link 'Delete'
    expect(page).to have_content 'Video Deleted!'
+   expect(page).not_to have_css 'video'
  end
 end
