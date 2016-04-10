@@ -12,7 +12,7 @@ _Using this app, users can:_
 * _Clone this repository_
 * _Run the following commands: (can be copied into terminal)_
 * _You may need to edit config/database.yml_
-* _You can test upload with spec/fixtures/mov_bbb.mp4
+* _You can test upload with spec/fixtures/mov_bbb.mp4_
 
 ```
 bundle                   # installs necessary dependencies
@@ -28,7 +28,7 @@ rails s                  # starts up the rails server
 
 ## Technologies Used
 
-_Ruby, Rspec, Rails, Capybara, Postgres, Rake, Active Record_
+_Ruby, Rspec, Rails, Capybara, Postgres, Rake, Active Record, PaperClip_
 
 ### Legal
 
