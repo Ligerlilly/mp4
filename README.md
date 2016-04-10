@@ -1,11 +1,11 @@
 # mp4
 
-#### By **_Jason Lane **
+#### By **Jason Lane **
 
 ## Description
 
 _Using this app, users can:_
-* _Create and play videos
+* Upload and play videos
 
 
 ## Setup
@@ -27,11 +27,11 @@ rails s                  # starts up the rails server
 
 ## Technologies Used
 
-_Ruby, rspec, Rails, Capybara, Postgres, Rake, Active Record_
+_Ruby, Rspec, Rails, Capybara, Postgres, Rake, Active Record_
 
 ### Legal
 
-Copyright (c) 2015 **_Jason Lane **
+Copyright (c) 2015 **Jason Lane **
 
 This software is licensed under the MIT license.
 
