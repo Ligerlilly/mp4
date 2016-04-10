@@ -3,7 +3,9 @@ require 'rails_helper'
 describe 'deleting a video' do
  it 'can delete a video' do
    visit '/'
-   click_link 'New Video'
+   within 'center' do
+     click_link 'Add Video'
+   end
    fill_in 'video_title', with: 'dog'
    page.attach_file('video_file', Rails.root + 'spec/fixtures/mov_bbb.mp4')
    click_button 'Create Video'
