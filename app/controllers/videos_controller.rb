@@ -15,7 +15,8 @@ class VideosController < ApplicationController
       flash[:notice] = "Success!"
       redirect_to videos_path
     else
-      redirect_to new_video_path, flash[:alert] = "Error!"
+      flash[:alert] = "Error!"
+      redirect_to new_video_path
     end
   end
 
