@@ -5,7 +5,7 @@ describe 'creating a video' do
    visit '/'
    click_link 'New Video'
    fill_in 'video_title', with: 'dog'
-   page.attach_file('video_file', Rails.root + 'spec/fixtures/sample_mpeg4.mp4')
+   page.attach_file('video_file', Rails.root + 'spec/fixtures/mov_bbb.mp4')
    click_button 'Create Video'
    expect(page).to have_content 'dog'
  end

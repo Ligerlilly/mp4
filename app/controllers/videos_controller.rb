@@ -2,7 +2,7 @@ class VideosController < ApplicationController
   before_action :find_video, except: [:index, :new, :create]
 
   def index
-    @videos = Video.all
+    @videos = Video.all.order('created_at DESC')
   end
 
   def new
@@ -18,6 +18,12 @@ class VideosController < ApplicationController
       flash[:alert] = "Error!"
       redirect_to new_video_path
     end
+  end
+
+  def destroy
+    @video.destroy
+    flash[:notice] = "Video Deleted!"
+    redirect_to videos_path
   end
 
   private

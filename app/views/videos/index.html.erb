@@ -2,7 +2,13 @@
 <% @videos.each do |video| %>
   <ul>
     <li>
-      <%= video.title %>
+      <h1><%= video.title %></h1>
+      <video width="400" controls>
+        <source src=<%= video.file %> type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <br>
+      <%= link_to 'Delete', video_path(video), data: { confirm: 'Are you sure?', method: 'delete'}%>
     </li>
   </ul>
   <% end %>
