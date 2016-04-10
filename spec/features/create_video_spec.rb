@@ -16,6 +16,6 @@ describe 'creating a video' do
    fill_in 'video_title', with: 'cat'
    page.attach_file('video_file', Rails.root + 'spec/fixtures/sample_iTunes.mov')
    click_button 'Create Video'
-   expect(page).to have_content 'Error!'
+   expect(page).to have_content 'You can only upload mp4 videos!'
  end
 end

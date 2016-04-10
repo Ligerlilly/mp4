@@ -15,7 +15,7 @@ class VideosController < ApplicationController
       flash[:notice] = "Success!"
       redirect_to videos_path
     else
-      flash[:alert] = "Error!"
+      flash[:alert] = "You can only upload mp4 videos!"
       redirect_to new_video_path
     end
   end
